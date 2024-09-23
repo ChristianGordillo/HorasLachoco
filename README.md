@@ -1,1 +1,1 @@
-Este va a ser el repositoria de horas de Lachoco
+Este va a ser el repositorio de horas de Lachoco
