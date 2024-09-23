@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+h2, h3 {
+    margin-bottom: 20px;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+.message {
+    margin-top: 10px;
+    color: green;
+}
+
+.log-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    margin-top: 20px;
+}
+
+#work-log {
+    display: block; /* Asegura que esté visible */
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    list-style-type: none; /* Para quitar los bullets */
+}
+
+/* Estilos para centrar el contenido de las celdas en la tabla */
+#total-hours-table {
+    width: 100%; /* Asegura que la tabla ocupe todo el ancho disponible */
+    border-collapse: collapse; /* Elimina los espacios entre bordes */
+}
+
+#total-hours-table th, 
+#total-hours-table td {
+    padding: 10px; /* Añade un poco de espacio interno */
+    text-align: center; /* Centra el texto horizontalmente */
+    vertical-align: middle; /* Centra el texto verticalmente */
+    border: 1px solid #ddd; /* Bordes para una mejor visualización */
+}
+
+#total-hours-table th {
+    background-color: #f2f2f2; /* Fondo diferente para los encabezados */
+    font-weight: bold;
+}

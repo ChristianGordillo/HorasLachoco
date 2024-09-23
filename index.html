@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de Entradas y Salidas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h2>Control de Entradas y Salidas</h2>
+    <div class="breadcrumb" id="breadcrumb">
+        <span id="step1-breadcrumb">Paso 1: Ingrese Cédula</span>
+        <span id="step2-breadcrumb" style="display: none;">Paso 2: Registro de Hora</span>
+    </div>
+
+    <form id="step-1">
+        <input type="number" id="cedula" placeholder="Ingrese su cédula" required>
+        <button type="submit">Ingresar</button>
+    </form>
+
+    <div id="step-2" style="display: none;">
+        <p id="saludo"></p> <!-- Nuevo elemento para mostrar el saludo -->
+        <p id="fecha-hora"></p> <!-- Este elemento mostrará la fecha y hora -->
+        <button id="start-work" style="display: none;">Marcar Entrada</button>
+        <button id="end-work" style="display: none;">Marcar Salida</button>
+        <button id="logout"  class="btn-salir" style="display: inline-block;">Salir</button> <!-- Botón para salir de la sesión -->
+
+    </div>
+    
+</div>
+
+<div class="log-container" id="log-container" style="display: none;">
+    <h3>Registro de Horas del Día</h3>
+    <ul id="work-log" style="display: block;">
+        <!-- Los registros se agregarán aquí -->
+    </ul>
+    <div id="total-hours-table-container">
+        <table id="total-hours-table">
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Total horas trabajadas</th>
+                    <th>Total minutos trabajados</th>
+                </tr>
+            </thead>
+            <tbody id="total-hours-table-body">
+                <!-- Aquí se agregarán las filas de totales -->
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
